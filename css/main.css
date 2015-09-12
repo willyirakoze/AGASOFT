@@ -1,0 +1,234 @@
+  
+  b {
+    font-family: 'Passion One', cursive;
+    font-weight: normal;
+    padding: 15px 0 0 0;
+    color: #FF0031;
+    text-shadow: 1px 1px #000, 1px 1px #02a2fe, 3px 3px #02a2fe, 4px 4px #02a2fe, 5px 5px #02a2fe, 6px 6px #02a2fe;}
+ 
+
+  body {
+        padding: 0;
+        margin: 0;
+    }
+    #menu, #menu ul {
+        /* Remove bullet points and add fonts */
+        list-style: none;
+        width: 970px;
+        position: relative;
+        top: 50px;
+        margin: 0px auto;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    
+    #menu li {
+        /* Horizontal menu, not vertical. Then just a little extra positioning */
+        float: left;
+        position: relative;
+        overflow: hidden;   
+        margin-right: 20px;
+        height: 40px;
+        
+    }
+    
+    #menu li a {
+        /* Clear up the links and position them correctly */
+        color: #000;
+        padding: 0 15px;
+        text-decoration: none;
+        display: block;
+        position: relative;
+        height: 40px;
+        padding: 10px 15px;
+        font-weight: bold;
+        /* Quick animations to animate the anchor */
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -ms-transition: all 0.2s ease-in;
+    }
+    
+    #menu li span {
+        /* Default width of the span (acts as border). Z-index so it appears behind the words. */
+        width: 6px;
+        z-index: -1;
+        /* Position it absolutely so it goes where we want it to go */
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        /* Animation again, because both the span and the anchor will be animated */
+        -webkit-transition: all 0.4s ease-in;
+        -moz-transition: all 0.4s ease-in;
+        -ms-transition: all 0.4s ease-in;
+    }
+    
+    #menu li:nth-of-type(1) span { background: #c04545; }
+    #menu li:nth-of-type(2) span { background: #c06b45; }
+    #menu li:nth-of-type(3) span { background: #88c045; }
+    #menu li:nth-of-type(4) span { background: #48c045; }
+    #menu li:nth-of-type(5) span { background: #45c0aa; }
+    #menu li:nth-of-type(6) span { background: #4576c0; }
+    #menu li:nth-of-type(7) span { background: #7945c0; }
+    
+    #menu li:hover > span {
+        min-width: 100%;
+    }
+
+    #menu li a:hover {
+        color: #fff;
+    }
+    
+    #menu .sub-menu li {
+        padding: 10px;
+        float: left;
+    }
+    
+    #menu li:hover {
+        box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+    }
+
+
+    #header {
+        background: #000;
+        padding: 20px;
+        color: #fff;
+    }
+    
+    #header a {
+        opacity: 1 !important;
+        color: #fff;
+        font-family: 'Myriad Pro', Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    #header img {
+        width: 150px;
+        height: 33px;
+        float: none;
+    }
+    
+/*.ntango{
+position:relative;
+width:50px;
+color:#FFF;
+display:block;
+text-decoration:none;
+margin:0 auto;
+border-radius:5px;
+border:solid 1px #D94E3B;
+background:#cb3b27;
+text-align:center;
+padding:20px 40px;
+-webkit-box-shadow: 0px 2px 0px #84261a;
+-moz-box-shadow: 0px 2px 0px #84261a;
+box-shadow: 0px 2px 0px #84261a;
+position:relative;
+top:10px;
+}*/
+
+.Intango
+    {
+    text-decoration:none;
+    color: #fff;
+    font-weight:bold;
+    padding:12px 20px;
+    font-size:18px;
+    border-radius:10px;
+    background-color:#666666;
+    box-shadow:0 5px 5px #313131,
+        0 9px 0 #393939, 
+        0px 9px 10px rgba(0,0,0,0.4),
+        inset 0px 2px 9px rgba(255,255,255,0.2),
+        inset 0 -2px 9px rgba(0,0,0,0.2);
+    position:relative;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+    display:inline-block;
+    font-family:Arial,Helvetica,sans-serif;
+    text-shadow:0px -1px 0px rgba(0,0,0,0.2);
+    }
+
+
+
+    .Intango:hover
+    {
+        box-shadow: 0 5px 5px #313131, 
+            0 9px 0 #393939, 
+            0px 9px 10px rgba(0,0,0,0.4),
+            inset 0px 2px 15px rgba(255,255,255,0.4), 
+            inset 0 -2px 9px rgba(0,0,0,0.2);
+        color:#fff!important;
+
+    }
+
+    .Intango:active
+    {
+        top:7px;box-shadow:0 2px 0 #393939,
+            0px 4px 4px rgba(0,0,0,0.4),
+            inset 0px 2px 5px rgba(0,0,0,0.2);
+        color: #fff !important;
+    }
+
+    .shield 
+    {
+        border-radius:5px 5px 35px 35px;
+        padding-left:25px;padding-right: 25px;
+    }
+
+    .criss-cross
+    {
+        border-radius:35px 5px;
+    }
+
+    .rectangular
+    {
+        border-radius:10px / 35px;
+    }
+    .one-corner
+    {
+        border-radius:5px 5px 35px 5px;
+        padding-right:25px;
+    }
+    .red
+    {
+        background-color:#c34747;
+        box-shadow:0 5px 5px #853232,
+            0 9px 0 #5e2525,
+            0px 9px 10px rgba(0,0,0,0.4),
+            inset 0px 2px 9px rgba(255,255,255,0.2),
+            inset 0 -2px 9px rgba(0,0,0,0.2);
+    }
+    .red:hover
+    {
+        box-shadow:0 5px 5px #853232,
+            0 9px 0 #5e2525,0px 9px 10px rgba(0,0,0,0.4),
+            inset 0px 2px 15px rgba(255,255,255,0.4),
+            inset 0 -2px 9px rgba(0,0,0,0.2);
+    }
+    .red:active
+    {
+        box-shadow: 0 2px 0 #5e2525,0px 4px 4px rgba(0,0,0,0.4),
+        inset 0px 2px 5px rgba(0,0,0,0.2);
+    }
+    .orange 
+    {
+        background-color:#c37846; 
+        box-shadow:0 5px 5px #855031,0 9px 0 #5e3a25,0px 9px 10px rgba(0,0,0,0.4),
+        inset 0px 2px 9px rgba(255,255,255,0.2),
+        inset 0 -2px 9px rgba(0,0,0,0.2);
+    }
+    .orange:hover
+    {
+        box-shadow:0 5px 5px #855031,0 9px 0 #5e3a25,0px 9px 10px rgba(0,0,0,0.4),
+        inset 0px 2px 15px rgba(255,255,255,0.4),
+        inset 0 -2px 9px rgba(0,0,0,0.2);
+    }
+    .orange:active 
+    {
+        box-shadow:0 2px 0 #5e3a25,0px 4px 4px rgba(0,0,0,0.4),
+        inset 0px 2px 5px rgba(0,0,0,0.2);}
+
+    .green 
+    {
+        background-color: #7fc345;box-shadow:0 5px 5px #508530,0 9px 0 #385e25,0px 9px 10px rgba(0,0,0,0.4),inset 0px 2px 9px rgba(255,255,255,0.2),inset 0 -2px 9px rgba(0,0,0,0.2);}.green:hover {box-shadow:0 5px 5px #508530,0 9px 0 #385e25,0px 9px 10px rgba(0,0,0,0.4),inset 0px 2px 15px rgba(255,255,255,0.4),inset 0 -2px 9px rgba(0,0,0,0.2);}.green:active {box-shadow: 0 2px 0 #385e25,0px 4px 4px rgba(0,0,0,0.4),inset 0px 2px 5px rgba(0,0,0,0.2);}.pink {box-shadow:0 5px 5px #782d54,0 9px 0 #5e254c,0px 9px 10px rgba(0,0,0,0.4),inset 0px 2px 9px rgba(255,255,255,0.2),inset 0 -2px 9px rgba(0,0,0,0.2);background-color: #d7298b;}.pink:hover {box-shadow:0 5px 5px #782d54,0 9px 0 #5e254c,0px 9px 10px rgba(0,0,0,0.4),inset 0px 2px 15px rgba(255,255,255,0.4),inset 0 -2px 9px rgba(0,0,0,0.2);}.pink:active {box-shadow:0 2px 0 #5e254c,0px 4px 4px rgba(0,0,0,0.3),inset 0px 2px 5px rgba(0,0,0,0.2);}.blue {background: #2a8ad8;box-shadow:0 5px 5px #364a8e,0 9px 0 #25325e,0px 9px 10px rgba(0,0,0,0.4),inset 0px 2px 9px rgba(255,255,255,0.2),inset 0 -2px 9px rgba(0,0,0,0.2);}.blue:hover {box-shadow:0 5px 5px #364a8e,0 9px 0 #25325e,0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4),inset 0 -2px 9px rgba(0,0,0,0.2);}.blue:active{box-shadow:0 2px 0 #25325e,0px 4px 4px rgba(0,0,0,0.3),inset 0px 2px 5px rgba(0,0,0,0.2);}.purple{background-color:#8a26d3;box-shadow:0 5px 5px #54307b,0 9px 0 #3f255e, 0px 9px 10px rgba(0,0,0,0.4),inset 0px 2px 9px rgba(255,255,255,0.2),inset 0 -2px 9px rgba(0,0,0,0.2);}.purple:hover {box-shadow: 0 5px 5px #54307b, 0 9px 0 #3f255e, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);}.purple:active{box-shadow:0 2px 0 #42255e,0px 4px 4px rgba(0,0,0,0.3),inset 0px 2px 5px rgba(0,0,0,0.2);} 
